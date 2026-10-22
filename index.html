@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name</title>
+  <meta name="description" content="Personal website of Your Name — short one-line description.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="nav-name" href="#top">Your Name</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <img class="avatar" src="assets/profile.jpg" alt="Portrait of Your Name"
+           onerror="this.onerror=null;this.src='assets/profile-placeholder.svg'">
+      <div>
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Your Name</h1>
+        <p class="lead">Job title · City, Country</p>
+        <div class="actions">
+          <a class="btn primary" href="assets/cv.pdf" download>Download CV</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Write two or three sentences about yourself here: what you do, what you care about,
+        and what you're looking for. Keep it friendly and specific.
+      </p>
+      <ul class="tags">
+        <li>Skill one</li>
+        <li>Skill two</li>
+        <li>Skill three</li>
+        <li>Skill four</li>
+      </ul>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="when">2023 — Present</div>
+          <div>
+            <h3>Role title <span>· Company</span></h3>
+            <p>One or two lines on what you did and the impact it had.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">2020 — 2023</div>
+          <div>
+            <h3>Role title <span>· Company</span></h3>
+            <p>One or two lines on what you did and the impact it had.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li>
+          <div class="when">2016 — 2020</div>
+          <div>
+            <h3>Degree <span>· University</span></h3>
+            <p>Optional: thesis, focus area or honours.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>The best way to reach me is by email.</p>
+      <ul class="links">
+        <li><a href="mailto:you@example.com">you@example.com</a></li>
+        <li><a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/vittf" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Your Name</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
