@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name</title>
-  <meta name="description" content="Personal website of Your Name — short one-line description.">
+  <title>Vittorio Frignati</title>
+  <meta name="description" content="Vittorio Frignati — CTO at Eepos / Asiastudio in Helsinki, with a background in platform and cloud engineering (AWS, Terraform, Kubernetes).">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,24 +13,24 @@
 </head>
 <body>
   <header class="nav">
-    <a class="nav-name" href="#top">Your Name</a>
+    <a class="nav-name" href="#top">Vittorio Frignati</a>
     <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
+      <a class="nav-page" href="climbing.html">Climbing</a>
     </nav>
   </header>
 
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <img class="avatar" src="assets/profile.jpg" alt="Portrait of Your Name"
-           onerror="this.onerror=null;this.src='assets/profile-placeholder.svg'">
+      <img class="avatar" src="assets/profile.jpg" alt="Portrait of Vittorio Frignati">
       <div>
         <p class="eyebrow">Hello, I'm</p>
-        <h1>Your Name</h1>
-        <p class="lead">Job title · City, Country</p>
+        <h1>Vittorio Frignati</h1>
+        <p class="lead">CTO at Eepos / Asiastudio · Helsinki, Finland</p>
         <div class="actions">
           <a class="btn primary" href="assets/cv.pdf" download>Download CV</a>
           <a class="btn" href="#contact">Get in touch</a>
@@ -42,14 +42,28 @@
     <section id="about">
       <h2>About</h2>
       <p>
-        Write two or three sentences about yourself here: what you do, what you care about,
-        and what you're looking for. Keep it friendly and specific.
+        I'm a cloud and platform engineer who loves automation and infrastructure as code.
+        I came into IT in 2018 with zero previous experience and never looked back. In 2022
+        public cloud pulled me in, AWS above all, and I've been building with Terraform ever since.
+      </p>
+      <p>
+        Today I'm CTO at Eepos / Asiastudio. Before that I spent years designing and running the
+        platforms engineering teams build on: landing zones, Kubernetes clusters, CI/CD pipelines
+        and monitoring. The goal is always the same: environments that are secure, scalable and
+        boring in the best way.
       </p>
       <ul class="tags">
-        <li>Skill one</li>
-        <li>Skill two</li>
-        <li>Skill three</li>
-        <li>Skill four</li>
+        <li>Terraform</li>
+        <li>Terraform Cloud</li>
+        <li>AWS</li>
+        <li>Azure &amp; Entra ID</li>
+        <li>Kubernetes</li>
+        <li>UpCloud</li>
+        <li>Docker</li>
+        <li>Datadog</li>
+        <li>GitHub Actions</li>
+        <li>GitLab CI</li>
+        <li>Python &amp; Bash</li>
       </ul>
     </section>
 
@@ -58,17 +72,60 @@
       <h2>Experience</h2>
       <ol class="timeline">
         <li>
-          <div class="when">2023 — Present</div>
+          <div class="when">Aug 2026 — Present</div>
           <div>
-            <h3>Role title <span>· Company</span></h3>
-            <p>One or two lines on what you did and the impact it had.</p>
+            <h3>CTO <span>· Eepos / Asiastudio</span></h3>
+            <p>
+              Leading engineering for Asiastudio and EEPOS4, two media brands running on one platform:
+              websites, iOS and Android apps, video streaming and subscriptions.
+            </p>
+            <ul>
+              <li>Led the October 2026 production launch of both brands, with a step-by-step runbook and a rollback for every step, without disrupting the existing website or company email.</li>
+              <li>Brought production online on Kubernetes with autoscaling, monitoring and alerting, sized for real traffic at a fraction of the cost of full high availability, with a documented path to scale up.</li>
+              <li>Introduced a single release flow for every service, with manual approval for production and database migrations that run automatically on each release.</li>
+              <li>Split the website into two brands on one codebase, with DNS and CDN managed as code.</li>
+              <li>Set the dev team's plans, roadmap and project boards.</li>
+            </ul>
           </div>
         </li>
         <li>
-          <div class="when">2020 — 2023</div>
+          <div class="when">Jun — Aug 2026</div>
           <div>
-            <h3>Role title <span>· Company</span></h3>
-            <p>One or two lines on what you did and the impact it had.</p>
+            <h3>Platform Engineer <span>· Eepos / Asiastudio</span></h3>
+            <ul>
+              <li>Evaluated cloud providers and built the company's infrastructure on UpCloud from scratch, all as code: Kubernetes, managed database and object storage.</li>
+              <li>Built the shared Kubernetes platform every service runs on (HTTPS, routing, scoped access for deployment pipelines) and automated build-and-deploy for the backend and website.</li>
+              <li>Moved infrastructure changes to pipelines that preview every change before applying it, with encrypted state and identical dev and production environments.</li>
+              <li>Planned the split of the backend into microservices and stood up the billing, notifications and translation services.</li>
+              <li>Built a GitHub manager that puts all of the company's repositories under code, with branch protection, required reviews and security alerts applied automatically.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">Aug 2024 — Jun 2026</div>
+          <div>
+            <h3>Platform Engineer <span>· Vincit</span></h3>
+            <p>
+              Designed, built and maintained the infrastructure and tooling behind application
+              security, logging, development and deployment. Managed container platforms (EKS, AKS),
+              built and secured CI/CD pipelines, and set up monitoring, alerting and synthetic
+              testing with Datadog.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="when">Feb 2022 — Jul 2024</div>
+          <div>
+            <h3>Cloud Architect <span>· Nordcloud</span></h3>
+            <p>
+              Joined through Nordcloud's Talent Acceleration Program while finishing my IT degree,
+              and grew from Junior Cloud Engineer (2022) to Cloud Engineer (2023) and Cloud Architect (2024).
+            </p>
+            <ul>
+              <li>Consulted on a long-running customer project to raise cloud maturity and automate processes.</li>
+              <li>Built a fully IaC AWS Landing Zone and designed and contributed a large set of Terraform modules.</li>
+              <li>Championed Terraform Cloud as the delivery pipeline and designed infrastructure for CDN-fronted web apps on ECS Fargate.</li>
+            </ul>
           </div>
         </li>
       </ol>
@@ -76,31 +133,59 @@
 
     <!-- EDUCATION -->
     <section id="education">
-      <h2>Education</h2>
+      <h2>Education &amp; certifications</h2>
       <ol class="timeline">
         <li>
-          <div class="when">2016 — 2020</div>
+          <div class="when">2018 — 2024</div>
           <div>
-            <h3>Degree <span>· University</span></h3>
-            <p>Optional: thesis, focus area or honours.</p>
+            <h3>BA Information Technology, IoT <span>· Savonia UAS</span></h3>
+            <p>Thesis: IaC Landing Zone in AWS. Grade 5/5.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">2022</div>
+          <div>
+            <h3>AWS Certified Solutions Architect – Associate</h3>
+            <p>Amazon Web Services</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">2023</div>
+          <div>
+            <h3>Migrations Ambassador Foundations (Business)</h3>
+            <p>Amazon Web Services</p>
           </div>
         </li>
       </ol>
     </section>
 
+    <!-- OUTSIDE WORK -->
+    <section id="outside-work">
+      <h2>Outside work</h2>
+      <a class="feature-card" href="climbing.html">
+        <img src="assets/climbing/cover.jpg" alt="Climbing"
+             onerror="this.onerror=null;this.src='assets/climbing/placeholder.svg'">
+        <div>
+          <h3>Climbing</h3>
+          <p>One line about your climbing goes here.</p>
+          <span class="more">See my climbing →</span>
+        </div>
+      </a>
+    </section>
+
     <!-- CONTACT -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>The best way to reach me is by email.</p>
+      <p>Want to talk cloud, platforms or Terraform? The best way to reach me is by email. I speak English and Italian.</p>
       <ul class="links">
-        <li><a href="mailto:you@example.com">you@example.com</a></li>
-        <li><a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:vittorio.frignati@gmail.com">vittorio.frignati@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/vittorio-frignati/" target="_blank" rel="noopener">LinkedIn</a></li>
         <li><a href="https://github.com/vittf" target="_blank" rel="noopener">GitHub</a></li>
       </ul>
     </section>
   </main>
 
-  <footer>© <span id="year"></span> Your Name</footer>
+  <footer>© <span id="year"></span> Vittorio Frignati</footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

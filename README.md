@@ -4,10 +4,11 @@ A simple static personal site (plain HTML + CSS), hosted with GitHub Pages.
 
 ## Editing
 
-- **Text**: edit `index.html` — replace every "Your Name" and placeholder text.
-- **Photo**: add a square-ish photo as `assets/profile.jpg`. Until then a placeholder is shown.
+- **Text**: edit `index.html`.
+- **Photo**: replace `assets/profile.jpg` (square-ish works best).
 - **CV**: add your CV as `assets/cv.pdf` — the "Download CV" button links to it.
 - **Colours**: change `--accent` in `style.css` (dark-mode values are just below).
+- **Climbing page**: edit `climbing.html`. Put photos in `assets/climbing/` named `cover.jpg`, `photo-1.jpg` … `photo-6.jpg`, `trip-1.jpg`, `trip-2.jpg`; each replaces its grey placeholder automatically. `cover.jpg` is also used on the home page's "Outside work" card. Delete any section you don't need (and its menu link).
 - **Favicon**: change the initials in `assets/favicon.svg`.
 
 Preview locally by opening `index.html` in a browser, or run `python3 -m http.server` and visit http://localhost:8000.
